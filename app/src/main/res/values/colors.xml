@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Gray -->
+    <color name="gray252525">#252525</color>
+    <color name="gray393939">#393939</color>
+    <color name="gray444B51">#444B51</color>
+    <color name="gray59595E">#56595E</color>
+    <color name="gray59595EAlpha">#5056595E</color>
+    <color name="gray909090">#909090</color>
+    <color name="gray949494">#949494</color>
+    <color name="gray999999">#999999</color>
+    <color name="grayADADAD">#ADADAD</color>
+    <color name="grayB2B1B1">#B2B1B1</color>
+    <color name="grayD1D1D1">#D1D1D1</color>
+    <color name="grayEEEEEE">#EEEEEE</color>
+    <color name="greenGray">#688280</color>
+
+    <!-- Blue -->
+    <color name="blue">#228CFF</color>
+    <color name="skyBlueB2EF4">#B2EBF4</color>
+    <color name="skyBlue80F5FF">#80F5FF</color>
+    <color name="skyBlue32D3FF">#32D3FF</color>
+    <color name="skyBlue00FFF8">#00FFF8</color>
+    <color name="blue00AAFF">#00AAFF</color>
+    <color name="blue006DFF">#006DFF</color>
+    <color name="blue1A6896">#1A6896</color>
+    <color name="blue0042ED">#0042ED</color>
+    <color name="blue1E90FF">#1E90FF</color>
+    <color name="blue0C66B7">#0C66B7</color>
+    <color name="navy003399">#003399</color>
+    <color name="navy192B3F">#192B3F</color>
+    <color name="navy013360">#013360</color>
+    <color name="alphaNavy">#AA336099</color>
+    <color name="navy223448">#223448</color>
+    <color name="navy043650">#043650</color>
+
+    <!-- Green -->
+    <color name="green4CAF50">#4CAF50</color>
+    <color name="green68E700">#68E700</color>
+    <color name="green07E240">#07E240</color>
+    <color name="green119208">#119208</color>
+    <color name="green86B381">#86B381</color>
+    <color name="springGreen">#7ECE7E</color>
+    <color name="green58FF00">#58FF00</color>
+    <color name="lime">#CCFF00</color>
+
+    <color name="yellow">#FFCC00</color>
+    <color name="orange">#FFA82E</color>
+    <color name="darkOrange">#FF9500</color>
+    <color name="darkerOrange">#FF7012</color>
+    <color name="brightRed">#FF562E</color>
+    <color name="red">#FF3100</color>
+    <color name="darkRed">#FB0000</color>
+    <color name="purple">#9C27B0</color>
+    <color name="brightPurple">#B2B2FF</color>
+</resources>
