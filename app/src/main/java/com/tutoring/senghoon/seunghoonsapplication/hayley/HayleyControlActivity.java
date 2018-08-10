@@ -1,18 +1,15 @@
-package com.tutoring.senghoon.seunghoonsapplication.seunghoon;
+package com.tutoring.senghoon.seunghoonsapplication.hayley;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import com.tutoring.senghoon.seunghoonsapplication.R;
 
-public class SeunghoonLinearLayoutActivity extends AppCompatActivity {
+public class HayleyControlActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seunghoon_linear_layout);
-
+        setContentView(R.layout.activity_hayley_control);
     }
-
-
 }

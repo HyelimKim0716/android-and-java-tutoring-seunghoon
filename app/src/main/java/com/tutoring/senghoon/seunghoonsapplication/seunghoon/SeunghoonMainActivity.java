@@ -1,14 +1,11 @@
 package com.tutoring.senghoon.seunghoonsapplication.seunghoon;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.tutoring.senghoon.seunghoonsapplication.R;
-import com.tutoring.senghoon.seunghoonsapplication.hayley.HayleyDataTypeActivity;
-import com.tutoring.senghoon.seunghoonsapplication.hayley.HayleyLinearLayoutActivity;
-import com.tutoring.senghoon.seunghoonsapplication.hayley.HayleyMainActivity;
 
 public class SeunghoonMainActivity extends AppCompatActivity {
 
@@ -19,6 +16,8 @@ public class SeunghoonMainActivity extends AppCompatActivity {
 
         findViewById(R.id.seunghoonMain_btnLinearLayout).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnDataType).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.seunghoonMain_btnDataTypeAssignment).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.seunghoonMain_btnControl).setOnClickListener(mBtnClickListener);
     }
 
     private View.OnClickListener mBtnClickListener = new View.OnClickListener() {
@@ -33,6 +32,14 @@ public class SeunghoonMainActivity extends AppCompatActivity {
 
                 case R.id.seunghoonMain_btnDataType:
                     intent = new Intent(SeunghoonMainActivity.this, SeunghoonDataTypeActivity.class);
+                    break;
+
+                case R.id.seunghoonMain_btnDataTypeAssignment:
+                    intent = new Intent(SeunghoonMainActivity.this, SeunghoonDataTypeAssignmentActivity.class);
+                    break;
+
+                case R.id.seunghoonMain_btnControl:
+                    intent = new Intent(SeunghoonMainActivity.this, SeunghoonControlActivity.class);
                     break;
             }
 

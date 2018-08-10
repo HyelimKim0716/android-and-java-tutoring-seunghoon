@@ -7,4 +7,140 @@
     android:orientation="vertical"
     tools:context=".seunghoon.SeunghoonDataTypeActivity">
 
+    <EditText
+        android:id="@+id/sh_dataType_etNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="정수형 숫자 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/sh_dataType_etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="정수형 숫자 2"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sh_dataType_btnSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00a3ff"
+            android:text="더하기"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sh_dataType_btnMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#0a43ff"
+            android:text="곱하기"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sh_dtaType_btnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00a4ff"
+            android:text="나누기"
+            android:textColor="#550aff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sh_dataType_tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="결과"
+        android:textColor="#00ff00"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/sh_dataType_etFloatNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="실수형 숫자 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/sh_dataType_etFloatNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="실수형 숫자 2"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sh_dataType_btnFloatsum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="실수형 더하기"
+            android:textColor="@color/orange"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sh_dataType_btnFloatMultiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/blue0042ED"
+            android:text="실수형 곱하기"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/sh_dataType_btnFloatDivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:text="실수형 나누기"
+            android:textColor="@color/green58FF00"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sh_dataType_tvFloatResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="실수형 숫자 1"
+        android:text="결과"
+        android:textColor="@color/red"
+        android:textSize="20dp" />
+
 </LinearLayout>

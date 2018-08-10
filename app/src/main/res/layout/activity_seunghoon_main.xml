@@ -21,6 +21,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/seunghoonMain_btnLinearLayout" />
 
+    <Button
+        android:id="@+id/seunghoonMain_btnDataTypeAssignment"
+        style="@style/Button.CustomNormal"
+        android:text="Data Type Assignment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seunghoonMain_btnDataType"/>
+
+    <Button
+        android:id="@+id/seunghoonMain_btnControl"
+        style="@style/Button.CustomNormal"
+        android:text="Control"
+        app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnLinearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
