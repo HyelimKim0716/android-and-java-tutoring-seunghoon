@@ -1,9 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".seunghoon.SeunghoonControlActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sh_control_etMath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="수학"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sh_control_btnMath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="수학성적"
+                android:textColor="#f5a400" />
+
+            <TextView
+                android:id="@+id/sh_control_tvMathGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="수학성적결과"
+                android:textColor="@color/red"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sh_control_etKorean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="국어"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sh_control_btnKorean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/blue"
+                android:text="국어성적"
+                android:textColor="#00ff00" />
+
+            <TextView
+                android:id="@+id/sh_control_tvKoreanGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="국어성적결과"
+                android:textColor="@color/red"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sh_control_etEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="영어"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sh_control_btnEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="영어성적"
+                android:textColor="#ff0400" />
+
+            <TextView
+                android:id="@+id/sh_control_tvEnglishGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="영어성적결과"
+                android:textColor="@color/red"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sh_control_etScience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="과학"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sh_control_btnScience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/skyBlue00FFF8"
+                android:text="과학성적"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/sh_control_tvScienceGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="과학성적결과"
+                android:textColor="#ff0000"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sh_control_etSociety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="사회"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/sh_control_btnSociety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/skyBlue00FFF8"
+                android:text="사회성적"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/sh_control_tvSocietyGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="사회성적결과"
+                android:textColor="#ff0000"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sh_control_tvMathComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="수학 성적 커맨트"
+        android:textColor="#00ff00"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/sh_control_tvKoreanComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:text="국어 성적 커맨트"
+        android:textColor="#00ff00"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/sh_control_tvEnglishComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:text="영어 성적 커맨트"
+        android:textColor="#00ff00"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/sh_control_tvScienceComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:text="과학 성적 커맨트"
+        android:textColor="#00ff00"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/sh_control_tvSocietyComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19sp"
+        android:text="사회 성적 커맨트"
+        android:textColor="#00ff00"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sh_control_etNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/sh_control_btnNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/sh_control_tvNumberResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+</LinearLayout>
