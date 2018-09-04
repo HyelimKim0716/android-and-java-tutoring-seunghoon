@@ -25,6 +25,9 @@
         <activity android:name=".seunghoon.SeunghoonDataTypeAssignmentActivity" />
         <activity android:name=".hayley.HayleyControlActivity" />
         <activity android:name=".seunghoon.SeunghoonControlActivity"></activity>
+        <activity android:name=".seunghoon.SeunghoonLinearLayoutActivity" />
+        <activity android:name=".hayley.HayleyControlActivity" />
+        <activity android:name=".hayley.HayleyRepeatActivity"></activity>
     </application>
 
 </manifest>

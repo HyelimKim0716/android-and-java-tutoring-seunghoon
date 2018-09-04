@@ -25,5 +25,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/hayleyMain_btnLinearLayout" />
 
+    <Button
+        android:id="@+id/hayleyMain_btnControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Control"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hayleyMain_btnDataType" />
+
+    <Button
+        android:id="@+id/hayleyMain_btnRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Repeat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/hayleyMain_btnControl" />
 
 </android.support.constraint.ConstraintLayout>

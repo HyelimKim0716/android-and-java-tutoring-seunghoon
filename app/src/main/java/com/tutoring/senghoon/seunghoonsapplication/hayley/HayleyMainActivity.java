@@ -16,6 +16,8 @@ public class HayleyMainActivity extends AppCompatActivity {
 
         findViewById(R.id.hayleyMain_btnLinearLayout).setOnClickListener(mBtnClickListener);
         findViewById(R.id.hayleyMain_btnDataType).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.hayleyMain_btnControl).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.hayleyMain_btnRepeat).setOnClickListener(mBtnClickListener);
     }
 
     private View.OnClickListener mBtnClickListener = new View.OnClickListener() {
@@ -30,6 +32,14 @@ public class HayleyMainActivity extends AppCompatActivity {
 
                 case R.id.hayleyMain_btnDataType:
                     intent = new Intent(HayleyMainActivity.this, HayleyDataTypeActivity.class);
+                    break;
+
+                case R.id.hayleyMain_btnControl:
+                    intent = new Intent(HayleyMainActivity.this, HayleyControlActivity.class);
+                    break;
+
+                case R.id.hayleyMain_btnRepeat:
+                    intent = new Intent(HayleyMainActivity.this, HayleyRepeatActivity.class);
                     break;
             }
 
