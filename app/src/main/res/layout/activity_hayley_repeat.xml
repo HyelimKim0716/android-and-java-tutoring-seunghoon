@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".hayley.HayleyRepeatActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/hl_repeat_llBoolean1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hl_repeat_tvBooleanTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Boolean1"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/hl_repeat_btnBoolean1Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:padding="5dp"
+            android:text="Boolean1결과"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/hl_repeat_tvBoolean1Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="Boolean1결과"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/hl_repeat_llBoolean2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/hl_repeat_tvBooleanTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boolean2"
+            android:background="@color/yellow"
+            android:padding="5dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/hl_repeat_btnBoolean2Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boolean2결과"
+            android:textColor="@color/red"
+            android:background="@color/green4CAF50"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/hl_repeat_tvBoolean2Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boolean2결과"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
