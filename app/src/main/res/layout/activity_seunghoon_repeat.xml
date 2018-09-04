@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".seunghoon.SeunghoonRepeatActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/sh_repeat_llBoolean1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sh_repeat_tvBooleanTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Boolean1"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/sh_repeat_btnBoolean1Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Boolean1Result"
+            android:textColor="#ff0000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/sh_repeat_tvBoolean1Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Boolean1Result"
+            android:textColor="#00ff00"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sh_repeat_llBoolean2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/green4CAF50"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/sh_repeat_tvBooleanTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boolean2"
+            android:background="@color/darkOrange"
+            android:padding="10dp"
+            android:textColor="@color/red"/>
+        <Button
+            android:id="@+id/sh_repeat_btnBoolean2Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boolean2Result"
+            android:textColor="@color/red"
+            android:background="@color/lime"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/sh-repeat_tvBoolean2Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boolean2Result"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/brightRed"
+            />
+
+    </LinearLayout>
+</LinearLayout>
