@@ -19,10 +19,11 @@
         <activity android:name=".hayley.HayleyMainActivity" />
         <activity android:name=".hayley.HayleyLinearLayoutActivity" />
         <activity android:name=".hayley.HayleyDataTypeActivity" />
-
         <activity android:name=".seunghoon.SeunghoonMainActivity" />
         <activity android:name=".seunghoon.SeunghoonDataTypeActivity" />
-        <activity android:name=".seunghoon.SeunghoonLinearLayoutActivity"/>
+        <activity android:name=".seunghoon.SeunghoonLinearLayoutActivity" />
+        <activity android:name=".hayley.HayleyControlActivity" />
+        <activity android:name=".hayley.HayleyRepeatActivity"></activity>
     </application>
 
 </manifest>
