@@ -43,4 +43,13 @@
         app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnLinearLayout"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/hayleyMain_btnMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Method"
+        app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnDataType"
+        app:layout_constraintStart_toEndOf="@id/hayleyMain_btnRepeat" />
+
 </android.support.constraint.ConstraintLayout>
