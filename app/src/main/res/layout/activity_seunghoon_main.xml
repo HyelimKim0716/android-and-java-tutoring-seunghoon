@@ -49,4 +49,11 @@
         app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnDataTypeAssignment"
         app:layout_constraintStart_toEndOf="@id/seunghoonMain_btnRepeat" />
 
+    <Button
+        android:id="@+id/seunghoonMain_btnSchedule"
+        style="@style/Button.CustomNormal"
+        android:text="Schedule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnControl" />
+
 </android.support.constraint.ConstraintLayout>

@@ -22,6 +22,7 @@
         <activity android:name=".hayley.HayleyControlActivity" />
         <activity android:name=".hayley.HayleyRepeatActivity" />
         <activity android:name=".hayley.HayleyMethodActivity" />
+        <activity android:name=".hayley.HayleyScheduleActivity" />
 
         <activity android:name=".seunghoon.SeunghoonMainActivity" />
         <activity android:name=".seunghoon.SeunghoonDataTypeActivity" />
@@ -30,6 +31,7 @@
         <activity android:name=".seunghoon.SeunghoonControlActivity" />
         <activity android:name=".seunghoon.SeunghoonRepeatActivity" />
         <activity android:name=".seunghoon.SeunghoonMethodActivity" />
+        <activity android:name=".seunghoon.SeunghoonScheduleActivity"/>
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@ public class SeunghoonMainActivity extends AppCompatActivity {
         findViewById(R.id.seunghoonMain_btnControl).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnRepeat).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnMethod).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.seunghoonMain_btnSchedule).setOnClickListener(mBtnClickListener);
     }
 
     private View.OnClickListener mBtnClickListener = new View.OnClickListener() {
@@ -50,6 +51,10 @@ public class SeunghoonMainActivity extends AppCompatActivity {
 
                 case R.id.seunghoonMain_btnMethod:
                     intent = new Intent(SeunghoonMainActivity.this, SeunghoonMethodActivity.class);
+                    break;
+
+                case R.id.seunghoonMain_btnSchedule:
+                    intent = new Intent(SeunghoonMainActivity.this, SeunghoonScheduleActivity.class);
                     break;
             }
 
