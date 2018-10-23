@@ -179,7 +179,7 @@ public class HayleyControlActivity extends AppCompatActivity {
                     } else if (math >= 70 && math < 80) {   // 70 <= math < 80
 
                         mathGrade = "C";
-                        tvMathGrade.setText("B");
+                        tvMathGrade.setText("C");
 
                     } else if (math >= 60 && math < 70) {   // 60 <= math < 70
 
