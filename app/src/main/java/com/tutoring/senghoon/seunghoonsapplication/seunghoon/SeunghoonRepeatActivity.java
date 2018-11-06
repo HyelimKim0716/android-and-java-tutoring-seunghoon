@@ -86,11 +86,11 @@ public class SeunghoonRepeatActivity extends AppCompatActivity {
 
         String number1 = "";
 
-        for (int x = 1; x <= 5; x--) { //세로우
+        for (int x = 1; x <= 5; x++) { //세로우
 
             number1 = number1 + "|";
 
-            for (int y = 1; y <= 3; y--) {  //가로우
+            for (int y = 1; y <= 3; y++) {  //가로우
                 number1 = number1 + y;
             }
 

@@ -1,10 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".seunghoon.SeunghoonScheduleActivity">
+    tools:context=".seunghoon.SeunghoonScheduleActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@color/black"
+            android:textColor="@color/red"
+            android:id="@+id/sh_schedule_btnMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="월" />
+        <Button
+            android:background="@color/red"
+            android:textColor="@color/orange"
+            android:id="@+id/sh_schedule_btnTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="화"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@color/orange"
+            android:textColor="@color/yellow"
+            android:id="@+id/sh_schedule_btnWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@color/yellow"
+            android:textColor="@color/green4CAF50"
+            android:id="@+id/sh_schedule_btnThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@color/green4CAF50"
+            android:textColor="@color/blue"
+            android:id="@+id/sh_schedule_btnFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@color/blue"
+            android:textColor="@color/purple"
+            android:id="@+id/sh_schedule_btnSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@color/purple"
+            android:id="@+id/sh_schedule_btnSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="19sp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~9시:" />
+        <TextView
+            android:textColor="@color/red"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvMorning1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~9시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/orange"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시 ~12시:" />
+        <TextView
+            android:textColor="@color/orange"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvMorning2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시~12시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/yellow"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12시~1시:"/>
+        <TextView
+            android:textColor="@color/yellow"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvAfternoon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12시~1시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/green4CAF50"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시~3시:"/>
+        <TextView
+            android:textColor="@color/green4CAF50"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvAfternoon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시~3시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/blue"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3시~6시:" />
+        <TextView
+            android:textColor="@color/blue"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvAfternoon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3시~6시까지 할 일"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:textColor="@color/purple"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6시~9시:" />
+        <TextView
+            android:textColor="@color/purple"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvEvening1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6시~9시까지 할 일"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시~12시:"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:id="@+id/sh_schedule_tvEvening2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시~12시까지 할 일"/>
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
+
