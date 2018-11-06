@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".seunghoon.SeunghoonMethod2Activity">
+    tools:context=".seunghoon.SeunghoonMethod1Activity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승훈 : " />
+
+        <EditText
+            android:id="@+id/sh_method2_etKorean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="국엉"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/red"/>
+
+        <EditText
+            android:id="@+id/sh_method2_etMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="수학"
+            android:gravity="right"
+            android:inputType="number"
+            android:textColor="@color/blue"/>
+
+        <EditText
+            android:id="@+id/sh_method2_etEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="잉글리시"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/orange"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/sh_method1_btnAllResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과!"
+        android:background="@color/green4CAF50"
+        android:textColor="@color/black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total :"
+            android:textSize="19sp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/sh_method1_tvTotalResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textColor="@color/blue"
+            android:textSize="19sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average:"
+            android:textColor="@color/red"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/sh_method1_tvAverageResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textColor="@color/blue"
+            android:textSize="19sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="method :"
+            android:textColor="@color/red"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/sh_method1_tvMethodTestResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textColor="@color/purple"
+            android:textSize="19sp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

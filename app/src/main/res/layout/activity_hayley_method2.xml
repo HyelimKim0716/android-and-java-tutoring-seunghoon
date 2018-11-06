@@ -1,9 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hayley.HayleyMethod2Activity">
+    tools:context=".hayley.HayleyMethod1Activity"
+    android:orientation="vertical" >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승훈 : " />
+
+        <EditText
+            android:id="@+id/hl_method2_etSeunghoonKorean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="국어"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/red"
+            />
+
+        <EditText
+            android:id="@+id/hl_method2_etSeunghoonMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="수학"
+            android:gravity="right"
+            android:inputType="number"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:id="@+id/hl_method2_etSeunghoonEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="영어"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/green07E240" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="혜림 : " />
+
+        <EditText
+            android:id="@+id/hl_method2_etHyelimKorean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="국어"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/red"
+            />
+
+        <EditText
+            android:id="@+id/hl_method2_etHyelimMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="수학"
+            android:gravity="right"
+            android:inputType="number"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:id="@+id/hl_method2_etHyelimEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="영어"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/green07E240" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hl_method2_btnAllResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="결과"
+        android:textColor="@color/purple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승훈 Total : "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/hl_method2_tvSeunghoonTotalResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textSize="20sp"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="혜림 Total : "
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/hl_method2_tvHyerlimTotalResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textSize="20sp"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구1 Total : "
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/hl_method2_tvFriend1Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textSize="20sp"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구2 Total : "
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/hl_method2_tvFriend2Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textSize="20sp"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구3 Total : "
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/hl_method2_tvFriend3TotalResult"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="result"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

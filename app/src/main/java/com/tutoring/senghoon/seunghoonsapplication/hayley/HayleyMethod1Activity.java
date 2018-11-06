@@ -20,18 +20,18 @@ public class HayleyMethod1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hayley_method);
+        setContentView(R.layout.activity_hayley_method1);
 
-        etKorean = findViewById(R.id.hl_method_etKorean);
-        etMath = findViewById(R.id.hl_method_etMath);
-        etEnglish = findViewById(R.id.hl_method_etEnglish);
+        etKorean = findViewById(R.id.hl_method1_etKorean);
+        etMath = findViewById(R.id.hl_method1_etMath);
+        etEnglish = findViewById(R.id.hl_method1_etEnglish);
 
-        btnAllResult = findViewById(R.id.hl_method_btnAllResult);
+        btnAllResult = findViewById(R.id.hl_method1_btnAllResult);
 
-        tvTotalResult = findViewById(R.id.hl_method_tvTotalResult);
-        tvAverageResult = findViewById(R.id.hl_method_tvAverageResult);
+        tvTotalResult = findViewById(R.id.hl_method1_tvTotalResult);
+        tvAverageResult = findViewById(R.id.hl_method1_tvAverageResult);
 
-        tvMethodTestResult = findViewById(R.id.hl_method_tvMethodTestResult);
+        tvMethodTestResult = findViewById(R.id.hl_method1_tvMethodTestResult);
 
         btnAllResult.setOnClickListener(btnResultListener);
 

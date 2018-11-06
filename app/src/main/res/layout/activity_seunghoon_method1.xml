@@ -12,7 +12,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/sh_method_etKorean"
+            android:id="@+id/sh_method1_etKorean"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -22,7 +22,7 @@
             android:textColor="@color/red"/>
 
         <EditText
-            android:id="@+id/sh_method_etMath"
+            android:id="@+id/sh_method1_etMath"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -32,7 +32,7 @@
             android:textColor="@color/blue"/>
 
         <EditText
-            android:id="@+id/sh_method_etEnglish"
+            android:id="@+id/sh_method1_etEnglish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -45,7 +45,7 @@
 
 
     <Button
-        android:id="@+id/sh_method_btnAllResult"
+        android:id="@+id/sh_method1_btnAllResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="결과!"
@@ -66,7 +66,7 @@
             android:textColor="@color/red"/>
 
         <TextView
-            android:id="@+id/sh_method_tvTotalResult"
+            android:id="@+id/sh_method1_tvTotalResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="result"
@@ -87,7 +87,7 @@
             android:textSize="19sp"/>
 
         <TextView
-            android:id="@+id/sh_method_tvAverageResult"
+            android:id="@+id/sh_method1_tvAverageResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="result"
@@ -105,7 +105,7 @@
             android:textColor="@color/red"
             android:textSize="19sp"/>
         <TextView
-            android:id="@+id/sh_method_tvMethodTestResult"
+            android:id="@+id/sh_method1_tvMethodTestResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Result"

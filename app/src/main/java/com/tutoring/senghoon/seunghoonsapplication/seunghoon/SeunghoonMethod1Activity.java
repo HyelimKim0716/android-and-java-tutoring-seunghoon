@@ -20,17 +20,17 @@ public class SeunghoonMethod1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seunghoon_method);
+        setContentView(R.layout.activity_seunghoon_method1);
 
-        etKorean = findViewById(R.id.sh_method_etKorean);
-        etMath = findViewById(R.id.sh_method_etMath);
-        etEnglish = findViewById(R.id.sh_method_etEnglish);
+        etKorean = findViewById(R.id.sh_method1_etKorean);
+        etMath = findViewById(R.id.sh_method1_etMath);
+        etEnglish = findViewById(R.id.sh_method1_etEnglish);
 
-        btnAllResult = findViewById(R.id.sh_method_btnAllResult);
+        btnAllResult = findViewById(R.id.sh_method1_btnAllResult);
 
-        tvTotalResult = findViewById(R.id.sh_method_tvTotalResult);
-        tvAverageResult = findViewById(R.id.sh_method_tvAverageResult);
-        tvMethodTestResult = findViewById(R.id.sh_method_tvMethodTestResult);
+        tvTotalResult = findViewById(R.id.sh_method1_tvTotalResult);
+        tvAverageResult = findViewById(R.id.sh_method1_tvAverageResult);
+        tvMethodTestResult = findViewById(R.id.sh_method1_tvMethodTestResult);
         btnAllResult.setOnClickListener(btnAllResultClickListener);
         setTvMethodTestResult();
         setTvMethodTestResultThirsty();
