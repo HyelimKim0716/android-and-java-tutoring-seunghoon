@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.tutoring.senghoon.seunghoonsapplication.R;
 
-public class SeunghoonMethodActivity extends AppCompatActivity {
+public class SeunghoonMethod1Activity extends AppCompatActivity {
 
     EditText etKorean, etMath, etEnglish;
     Button btnAllResult;
