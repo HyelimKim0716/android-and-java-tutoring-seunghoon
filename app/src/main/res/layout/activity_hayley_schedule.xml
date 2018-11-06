@@ -1,9 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hayley.HayleyScheduleActivity">
+    tools:context=".hayley.HayleyScheduleActivity"
+    android:orientation="vertical" >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/hl_schedule_btnMonday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="월" />
+
+        <Button
+            android:id="@+id/hl_schedule_btnTuesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="화" />
+
+        <Button
+            android:id="@+id/hl_schedule_btnWednesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수" />
+
+        <Button
+            android:id="@+id/hl_schedule_btnThursday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="목" />
+
+        <Button
+            android:id="@+id/hl_schedule_btnFriday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="금" />
+
+        <Button
+            android:id="@+id/hl_schedule_btnSaturday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="토" />
+
+        <Button
+            android:id="@+id/hl_schedule_btnSunday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="일" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~9시 : " />
+
+        <TextView
+            android:id="@+id/hl_schedule_tvMorning1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~9시까지 할 일"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시 ~ 12시 : " />
+
+        <TextView
+            android:id="@+id/hl_schedule_tvMorning2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시 ~12시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12시 ~ 1시 : " />
+
+        <TextView
+            android:id="@+id/hl_schedule_tvAfternoon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12시 ~1시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/hl_schedule_tvAfternoon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시 ~ 3시 : " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1시 ~ 3시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3시 ~ 6시 : " />
+
+        <TextView
+            android:id="@+id/hl_schedule_tvAfternoon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3시 ~ 6시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6시 ~ 9시 : " />
+
+        <TextView
+            android:id="@+id/hl_schedule_tvEvening1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6시 ~ 9시까지 할 일"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시 ~ 12시 : " />
+
+        <TextView
+            android:id="@+id/hl_schedule_tvEvening2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9시 ~ 12시까지 할 일"/>
+    </LinearLayout>
+</LinearLayout>
