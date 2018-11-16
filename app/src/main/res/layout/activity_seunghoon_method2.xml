@@ -5,98 +5,201 @@
     android:layout_height="match_parent"
     tools:context=".seunghoon.SeunghoonMethod1Activity"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="승훈 : " />
+            android:text="승훈:"
+            android:textSize="19sp" />
 
         <EditText
-            android:id="@+id/sh_method2_etKorean"
+            android:id="@+id/sh_method2_etMyKorean"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="국엉"
-            android:gravity="center"
             android:inputType="number"
-            android:textColor="@color/red"/>
-
+            android:layout_weight="1"/>
         <EditText
-            android:id="@+id/sh_method2_etMath"
+            android:id="@+id/sh_method2_etMyMath"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="수학"
-            android:gravity="right"
             android:inputType="number"
-            android:textColor="@color/blue"/>
-
+            android:layout_weight="1"/>
         <EditText
-            android:id="@+id/sh_method2_etEnglish"
+            android:id="@+id/sh_method2_etMyEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="영어"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="센세:" />
+        <EditText
+            android:id="@+id/sh_method2_etTeacherKorean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="국어"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etTeacherMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="수학"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etTeacherEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="영어"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="길민규"/>
+        <EditText
+            android:id="@+id/sh_method2_etBfKorean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="국어어"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etBfMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="수학학"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etBfEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="영어엉"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김강민"/>
+        <EditText
+            android:id="@+id/sh_method2_etMinKorean"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="잉글리시"
-            android:gravity="center"
             android:inputType="number"
-            android:textColor="@color/orange"/>
+            android:hint="국어"/>
+        <EditText
+            android:id="@+id/sh_method2_etMinMath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="수학"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etMinEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="영어억"
+            android:inputType="number"
+            android:layout_weight="1"/>
     </LinearLayout>
-
-
-    <Button
-        android:id="@+id/sh_method1_btnAllResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="결과!"
-        android:background="@color/green4CAF50"
-        android:textColor="@color/black" />
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total :"
-            android:textSize="19sp"
+            android:text="조한성"/>
+        <EditText
+            android:id="@+id/sh_method2_etHanKorean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="구어"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etHanMath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="수학"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/sh_method2_etHanEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="여엉어"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/sh_method2_btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:background="@color/red"
+            android:textColor="@color/blue"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승훈Total:"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/sh_method2_tvMyResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textColor="@color/purple"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="센세Total:"
+            android:textColor="@color/orange" />
+        <TextView
+            android:id="@+id/sh_method2_tvTeacherResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
             android:textColor="@color/red"/>
-
-        <TextView
-            android:id="@+id/sh_method1_tvTotalResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="result"
-            android:textColor="@color/blue"
-            android:textSize="19sp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Average:"
-            android:textColor="@color/red"
-            android:textSize="19sp"/>
-
-        <TextView
-            android:id="@+id/sh_method1_tvAverageResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="result"
-            android:textColor="@color/blue"
-            android:textSize="19sp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,19 +208,58 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="method :"
-            android:textColor="@color/red"
-            android:textSize="19sp"/>
+            android:text="길민규Total:"
+            android:textColor="@color/yellow" />
         <TextView
-            android:id="@+id/sh_method1_tvMethodTestResult"
+            android:id="@+id/sh_method2_tvBfResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Result"
-            android:textColor="@color/purple"
-            android:textSize="19sp"/>
+            android:text="result"
+            android:textColor="@color/lime"/>
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김강민Total:"
+            android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/sh_method2_tvMinResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textColor="@color/skyBlueB2EF4" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조한성Total:"
+            android:textColor="@color/green4CAF50" />
+        <TextView
+            android:id="@+id/sh_method2_tvHanResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+
+
+
 
 
 
 
 </LinearLayout>
+
