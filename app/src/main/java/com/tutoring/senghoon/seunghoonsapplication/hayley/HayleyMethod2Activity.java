@@ -146,6 +146,8 @@ public class HayleyMethod2Activity extends AppCompatActivity {
             int hansungMath = Integer.parseInt(etFriend3Math.getText().toString());
             int hansungEnglish = Integer.parseInt(etFriend3English.getText().toString());
 
+
+
             if (etFriend3Korean.getText().toString() != "") {
                 hansungKorean = Integer.parseInt(etFriend3Korean.getText().toString());
             }
