@@ -79,5 +79,14 @@
         app:layout_constraintStart_toEndOf="@id/hayleyMain_btnMethod3"
         app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnMethod1" />
 
+    <Button
+        android:id="@+id/hayleyMain_btnCarClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Car Class"
+        app:layout_constraintStart_toEndOf="@id/hayleyMain_btnSchedule"
+        app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnMethod2" />
+
 
 </android.support.constraint.ConstraintLayout>

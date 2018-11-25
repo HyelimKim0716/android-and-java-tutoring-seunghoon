@@ -25,7 +25,6 @@
         <activity android:name=".hayley.HayleyMethod2Activity" />
         <activity android:name=".hayley.HayleyMethod3Activity" />
         <activity android:name=".hayley.HayleyScheduleActivity" />
-
         <activity android:name=".seunghoon.SeunghoonMainActivity" />
         <activity android:name=".seunghoon.SeunghoonDataTypeActivity" />
         <activity android:name=".seunghoon.SeunghoonLinearLayoutActivity" />
@@ -33,9 +32,11 @@
         <activity android:name=".seunghoon.SeunghoonControlActivity" />
         <activity android:name=".seunghoon.SeunghoonRepeatActivity" />
         <activity android:name=".seunghoon.SeunghoonMethod1Activity" />
-        <activity android:name=".seunghoon.SeunghoonMethod2Activity"/>
-        <activity android:name=".seunghoon.SeunghoonMethod3Activity"/>
+        <activity android:name=".seunghoon.SeunghoonMethod2Activity" />
+        <activity android:name=".seunghoon.SeunghoonMethod3Activity" />
         <activity android:name=".seunghoon.SeunghoonScheduleActivity" />
+        <activity android:name=".hayley.HayleyCarClassActivity" />
+        <activity android:name=".seunghoon.SeunghoonCarClassActivity"></activity>
     </application>
 
 </manifest>
