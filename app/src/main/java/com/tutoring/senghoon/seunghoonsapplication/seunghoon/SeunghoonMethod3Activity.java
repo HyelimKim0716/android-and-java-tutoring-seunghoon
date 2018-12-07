@@ -60,6 +60,60 @@ public class SeunghoonMethod3Activity extends AppCompatActivity {
         etMyEnglish = findViewById(R.id.sh_method2_etMyEnglish);
 
         btnResult.setOnClickListener(btnOnClickListener);
+
+
+
+        int[] seunghoonGrade = new int[5];
+
+        seunghoonGrade[0] = 100;
+        seunghoonGrade[1] = 98;
+        seunghoonGrade[2] = 89;
+        seunghoonGrade[3] = 90;
+        seunghoonGrade[4] = 10;
+
+        int sum = seunghoonGrade[0] + seunghoonGrade[1] + seunghoonGrade[2] + seunghoonGrade[3] + seunghoonGrade[4];
+
+        int seunghoonSum = 0;
+        for (int i = 0; i < 5; i++) {
+            seunghoonSum += seunghoonGrade[i];
+        }
+        int[] teacherGrade = new int[5];
+        teacherGrade[0] = 10;
+        teacherGrade[1] = 20;
+        teacherGrade[2] = 30;
+        teacherGrade[3] = 40;
+        teacherGrade[4] = 50;
+
+        int teacherAverage = 0;
+        int teacherSum = 0;
+
+        for (int i = 0; i < teacherGrade.length;i++) {
+            teacherSum += teacherGrade[i];
+        }
+
+        teacherAverage = teacherSum / 5;
+
+
+        int[] kangminGrade = new int[5];
+        kangminGrade[0] = 10;
+        kangminGrade[1] = 20;
+        kangminGrade[2] = 30;
+        kangminGrade[3] = 40;
+        kangminGrade[4] = 50;
+
+        int kangminSum = 0;
+        for (int i = 0; i < kangminGrade.length; i++) {
+            kangminSum += kangminGrade[i];
+        }
+
+       int kangminAverage = kangminSum / kangminGrade.length;
+
+
+
+
+
+
+
     }
 
     View.OnClickListener btnOnClickListener = new View.OnClickListener() {

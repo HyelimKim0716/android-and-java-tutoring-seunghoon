@@ -147,7 +147,8 @@ public class SeunghoonMethod2Activity extends AppCompatActivity {
             int hanMath = 0;
             int hanEnglish = 0;
 
-            if (etHanKorean.getText().toString()!= "") {
+            // ==,
+            if (etHanKorean.getText().toString() != "") {
                 hanKorean = Integer.parseInt(etHanKorean.getText().toString());
             }
             if (etHanMath.getText().toString()!= "") {
