@@ -88,5 +88,14 @@
         app:layout_constraintStart_toEndOf="@id/hayleyMain_btnSchedule"
         app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnMethod2" />
 
+    <Button
+        android:id="@+id/hayleyMain_btnDogClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Dog Class"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnMethod3" />
+
 
 </android.support.constraint.ConstraintLayout>

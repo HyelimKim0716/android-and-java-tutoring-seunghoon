@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hayley.HayleyCarClassActivity">
+    tools:context=".hayley.HayleyCarClassActivity"
+    android:orientation="vertical" >
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seunghoon's Car" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="color : " />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvSeunghoonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="colorValue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheel : " />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvSeunghoonWheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wheelValue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Window : "/>
+
+        <TextView
+            android:id="@+id/hl_carClass_tvSeunghoonWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="windowValue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hl_carClass_btnSeunghoonBreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Break!"/>
+
+        <TextView
+            android:id="@+id/hl_carClass_tvSeunghoonBreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="breakValue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speed : "/>
+
+        <Button
+            android:id="@+id/hl_carClass_btnSeunghoonSpeedDown"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/hl_carClass_btnSeunghoonSpeedUp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvSeunghoonSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speedValue"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -85,4 +85,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnMethod2" />
 
+    <Button
+        android:id="@+id/seunghoonMain_btnDogClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Dog Class"
+        app:layout_constraintStart_toEndOf="@id/seunghoonMain_btnCarClass"
+        app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnMethod3" />
+
 </android.support.constraint.ConstraintLayout>
