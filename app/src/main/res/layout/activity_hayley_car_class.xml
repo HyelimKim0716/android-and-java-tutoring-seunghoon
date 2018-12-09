@@ -113,7 +113,113 @@
             android:layout_height="wrap_content"
             android:text="speedValue"
             />
+    </LinearLayout>
 
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Teacher's Car" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color : " />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvTeacherColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="colorValue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheel : " />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvTeacherWheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wheelValue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Window : " />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvTeacherWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="windowValue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/hl_carClass_btnTeacherBreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Break" />
+
+        <TextView
+            android:id="@+id/hl_carClass_tvTeacherBreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="breakValue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed : " />
+
+        <Button
+            android:id="@+id/hl_carClass_btnTeacherSpeedDown"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/hl_carClass_btnTeacherSpeedUp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+
+        <TextView
+            android:id="@+id/hl_carClass_tvTeacherSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sppedValue"/>
     </LinearLayout>
 
 </LinearLayout>
