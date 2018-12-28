@@ -8,7 +8,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
 
@@ -16,8 +17,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/dog1"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/dog1" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -31,15 +32,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Breed : " />
+                    style="@style/HayleyDogTitleTextView"
+                    android:text="Breed : "
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvBreed1"
+                    style="@style/HayleyDogTitleTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="BreedValue" />
+                    android:text="BreedValue"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -50,13 +53,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Size : " />
+                    android:text="Size : "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvSize1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SizeValue"/>
+                    android:text="SizeValue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -67,30 +74,38 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Age : " />
+                    android:text="Age : "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvAge1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AgeValue" />
+                    android:text="AgeValue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Color : " />
+                    android:text="Color : "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvColor1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ColorValue" />
+                    android:text="ColorValue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -98,7 +113,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <ImageView
@@ -119,78 +135,148 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogTitleTextView"
+                    android:layout_height="match_parent"
                     android:text="Breed : " />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvBreed2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogValueTextView"
                     android:text="BreedValue" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogTitleTextView"
+                    android:layout_height="match_parent"
                     android:text="Size : " />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvSize2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SizeValue"/>
+                    style="@style/HayleyDogValueTextView"
+                    android:text="SizeValue" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogTitleTextView"
                     android:text="Age : " />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvAge2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogValueTextView"
                     android:text="AgeValue" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogTitleTextView"
                     android:text="Color : " />
 
                 <TextView
                     android:id="@+id/hl_dogClass_tvColor2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/HayleyDogValueTextView"
                     android:text="ColorValue" />
             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/dog3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/HayleyDogTitleTextView"
+                    android:text="Breed : " />
+
+                <TextView
+                    android:id="@+id/hl_dogClass_tvBreed3"
+                    style="@style/HayleyDogValueTextView"
+                    android:text="BreedValue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/HayleyDogTitleTextView"
+                    android:text="Size : " />
+
+                <TextView
+                    android:id="@+id/hl_dogClass_tvSize3"
+                    style="@style/HayleyDogValueTextView"
+                    android:text="SizeValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/HayleyDogTitleTextView"
+                    android:text="Age : " />
+
+                <TextView
+                    android:id="@+id/hl_dogClass_tvAge3"
+                    style="@style/HayleyDogValueTextView"
+                    android:text="AgeValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/HayleyDogTitleTextView"
+                    android:text="Color : " />
+
+                <TextView
+                    android:id="@+id/hl_dogClass_tvColor3"
+                    style="@style/HayleyDogValueTextView"
+                    android:text="ColorValue" />
+            </LinearLayout>
         </LinearLayout>
 
 
     </LinearLayout>
 
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:scaleType="centerInside"
-        android:src="@drawable/dog3" />
 </LinearLayout>

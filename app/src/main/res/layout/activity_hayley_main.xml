@@ -97,5 +97,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnMethod3" />
 
+    <Button
+        android:id="@+id/hayleyMain_btnInheritance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Heritance"
+        app:layout_constraintStart_toEndOf="@id/hayleyMain_btnDogClass"
+        app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnSchedule" />
+
 
 </android.support.constraint.ConstraintLayout>
