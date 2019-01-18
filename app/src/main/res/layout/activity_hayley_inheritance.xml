@@ -3,6 +3,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hayley.HayleyInheritanceActivity">
+    tools:context=".hayley.HayleyInheritanceActivity"
+    android:orientation="vertical"
+    >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simba" />
+
+    <TextView
+        android:id="@+id/hl_animal_tvSimbaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simba Value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mufasa" />
+
+    <TextView
+        android:id="@+id/hl_animal_tvMufasaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mufasa Value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scar"/>
+
+    <TextView
+        android:id="@+id/hl_animal_tvScarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scar Value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lapikey"/>
+
+    <TextView
+        android:id="@+id/hl_animal_tvLapikeyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lapikey Value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poomba"/>
+
+    <TextView
+        android:id="@+id/hl_animal_tvPoombaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poomba Value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timon"/>
+
+    <TextView
+        android:id="@+id/hl_animal_tvTimonValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timon Value"/>
 </LinearLayout>
