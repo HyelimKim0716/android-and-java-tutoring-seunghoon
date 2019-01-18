@@ -1,15 +1,16 @@
 package com.tutoring.senghoon.seunghoonsapplication.hayley;
 
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.widget.TextView;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
 
-        import com.tutoring.senghoon.seunghoonsapplication.R;
+import com.tutoring.senghoon.seunghoonsapplication.R;
 
 public class HayleyInheritanceActivity extends AppCompatActivity {
 
     TextView tvSimbaValue, tvMufasaValue, tvScarValue,
-            tvLapikeyValue, tvPoombaValue, tvTimonValue;
+            tvLapikeyValue, tvPoombaValue, tvTimonValue,
+            tvZazuValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,93 +23,78 @@ public class HayleyInheritanceActivity extends AppCompatActivity {
         tvLapikeyValue = findViewById(R.id.hl_animal_tvLapikeyValue);
         tvPoombaValue = findViewById(R.id.hl_animal_tvPoombaValue);
         tvTimonValue = findViewById(R.id.hl_animal_tvTimonValue);
+        tvZazuValue = findViewById(R.id.hl_animal_tvZazuValue);
 
-        Lion simba = new Lion();
-        simba.legCount = 4;
-        simba.hairColor = "Yellow";
-        simba.age = 4;
-        simba.isAdult = false;
-        simba.maneColor = "None";
+        Lion simba = new Lion("Simba", "Yellow", 4, false, "None");
+        Lion mufasa = new Lion("Mufasa", "Brwon", 46, true, "Red Brown");
+        Lion scar = new Lion("Scar", "Dark Brown", 37, true, "Black");
+        Monkey lapikey = new Monkey("Lapikey", "Navy", 80);
+        Pig poomba = new Pig("Poomba", 4, "Brown", 20 );
+        Weasel timon = new Weasel("Timon", 4, "Orange", 20);
+        Bird zazu = new Bird("Zazu", 48, "Blue", 48);
 
-        Lion mufasa = new Lion();
-        mufasa.legCount = 4;
-        mufasa.hairColor = "Brown";
-        mufasa.age = 46;
-        mufasa.isAdult = true;
-        mufasa.maneColor = "Red Brown";
 
-        Lion scar = new Lion();
-        scar.legCount = 4;
-        scar.hairColor = "Dark Brown";
-        scar.age = 37;
-        scar.isAdult = true;
-        scar.maneColor = "Black";
-
-        Monkey lapikey = new Monkey();
-        lapikey.legCount = 2;
-        lapikey.hairColor = "Navy";
-        lapikey.age = 80;
-
-        Pig poomba = new Pig();
-        poomba.legCount = 4;
-        poomba.hairColor = "Brown";
-        poomba.age = 20;
-
-        Weasel timon = new Weasel();
-        timon.legCount = 4;
-        timon.hairColor = "Orange";
-        timon.age = 20;
-
-        tvSimbaValue.setText(simba.legCount + ", "
-                + simba.hairColor + ", "
-                + simba.age + ", "
+        tvSimbaValue.setText(simba.getMessage()
                 + simba.isAdult + ", "
                 + simba.maneColor);
 
-        tvMufasaValue.setText(mufasa.legCount + ", "
-                + mufasa.hairColor + ", "
-                + mufasa.age + ", "
+        tvMufasaValue.setText(mufasa.getMessage()
                 + mufasa.isAdult + ", "
                 + mufasa.maneColor);
 
-        tvScarValue.setText(scar.legCount + ", "
-                + scar.hairColor + ", "
-                + scar.age + ", "
+        tvScarValue.setText(scar.getMessage()
                 + scar.isAdult + ", "
                 + scar.maneColor);
 
-        tvLapikeyValue.setText(lapikey.legCount + ", "
-                + lapikey.hairColor + ", "
-                + lapikey.age);
+        tvLapikeyValue.setText(lapikey.getMessage());
 
-        tvPoombaValue.setText(poomba.legCount + " , "
-                + poomba.hairColor + ", "
-                + poomba.age);
+        tvPoombaValue.setText(poomba.getMessage());
 
 
-        tvTimonValue.setText(timon.legCount + ", "
-                + timon.hairColor + ", "
-                + timon.age);
+        tvTimonValue.setText(timon.getMessage());
+
+        tvZazuValue.setText(zazu.getMessage());
 
         simba.run("Slowly");
-        simba.eat("Simba", "Meat");
+        simba.walk("천천히", "걷는다");
+        simba.eat("Meat");
+        simba.see("하늘");
+        simba.singASong("하쿠마마타");
 
         mufasa.run("Fast");
-        mufasa.eat("Mufasa", "Horse");
+        mufasa.walk("아주 천천히", "산책한다");
+        mufasa.eat("Horse");
+        mufasa.see("심바");
+        mufasa.singASong("엄지 척");
 
         scar.run("Very fast");
-        scar.eat("Scar", "Pork");
+        scar.walk("빠르게", "걸을랑말랑");
+        scar.eat("Pork");
+        scar.see("하이에나들");
+        scar.singASong("마른논에 물대기");
 
         lapikey.run("Very slowly");
-        lapikey.eat("Lapikey", "Apple");
+        lapikey.walk("빨리", "걸었다");
+        lapikey.eat("Apple");
+        lapikey.see("Mufasa");
+        lapikey.singASong("탓");
 
         poomba.run("느그적 느그적");
-        poomba.eat("Poomba", "Worm");
+        poomba.walk("느리게", "걷는다");
+        poomba.eat("Worm");
+        poomba.see("Timon");
+        poomba.singASong("하쿠마마타타");
 
         timon.run("깡총 깡총");
-        timon.eat("Timon", "지네");
+        timon.walk("느으리게에", "걸었어욥");
+        timon.eat("지네");
+        timon.see("지네");
+        timon.singASong("전율");
 
-
-
+        zazu.walk("느리게", "걷는담");
+        zazu.eat("열매");
+        zazu.see("심바");
+        zazu.fly("훨훨");
+        zazu.singASong("Solo");
     }
 }

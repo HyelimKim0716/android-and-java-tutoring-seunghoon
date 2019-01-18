@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".hayley.HayleyInheritanceActivity"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical" >
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,4 +71,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Timon Value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zazu"/>
+
+    <TextView
+        android:id="@+id/hl_animal_tvZazuValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zazu Value"
+        />
 </LinearLayout>
