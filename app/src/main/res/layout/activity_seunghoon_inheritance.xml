@@ -3,6 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hayley.HayleyInheritanceActivity">
-
+    tools:context=".hayley.HayleyInheritanceActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simba"/>
+    <TextView
+        android:id="@+id/sh_animal_tvSimbaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simba Value"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mufasa"/>
+    <TextView
+        android:id="@+id/sh_animal_tvMufasaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mufasa Value"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="scar"/>
+    <TextView
+        android:id="@+id/sh_animal_tvScarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scar Value"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lapikey"/>
+    <TextView
+        android:id="@+id/sh_animal_tvLapikeyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lapikey Value"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="poomba"/>
+    <TextView
+        android:id="@+id/sh_animal_tvPoombaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="poomba Value"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timon"/>
+    <TextView
+        android:id="@+id/sh_animal_tvTimonValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timon Value"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zazu"/>
+    <TextView
+        android:id="@+id/sh_animal_tvZazuValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zazuValue"/>
 </LinearLayout>
