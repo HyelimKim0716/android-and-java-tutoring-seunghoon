@@ -10,16 +10,13 @@ public class Lion extends Animal {
         super(name, 4, hairColor, age);
         this.isAdult = isAdult;
         this.maneColor = maneColor;
-
     }
 
     @Override
     String getMessage() {
-        return name + ", " + legCount
-                + ", " + hairColor
-                + ", " + age
-                + ", " + isAdult
-                + ", " + maneColor;
+        return super.getMessage() + ", "
+                + isAdult + ", "
+                + maneColor;
     }
 
     @Override

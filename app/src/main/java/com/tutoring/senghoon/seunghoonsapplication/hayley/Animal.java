@@ -20,7 +20,10 @@ public abstract class Animal {
 
 
     String getMessage() {
-        return name + ", " + legCount + ", " + hairColor + ", " + age;
+        return name + ", "
+                + legCount + ", "
+                + hairColor + ", "
+                + age;
     }
 
 
