@@ -26,6 +26,7 @@ public class SeunghoonMainActivity extends AppCompatActivity {
         findViewById(R.id.seunghoonMain_btnCarClass).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnDogClass).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnInheritance).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.seunghoonMain_btnInterface).setOnClickListener(mBtnClickListener);
     }
 
     private View.OnClickListener mBtnClickListener = new View.OnClickListener() {
@@ -80,6 +81,10 @@ public class SeunghoonMainActivity extends AppCompatActivity {
 
                 case R.id.seunghoonMain_btnInheritance:
                     intent = new Intent(SeunghoonMainActivity.this, SeunghoonInheritanceActivity.class);
+                    break;
+
+                case R.id.seunghoonMain_btnInterface:
+                    intent = new Intent(SeunghoonMainActivity.this, SeunghoonInterfaceActivity.class);
                     break;
             }
 
