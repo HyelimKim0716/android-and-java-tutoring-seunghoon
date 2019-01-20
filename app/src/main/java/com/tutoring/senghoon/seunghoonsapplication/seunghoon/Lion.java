@@ -10,12 +10,14 @@ public class Lion extends Animal {
 
     @Override
     String getMessage() {
-        return name + "," + legCount + "," + hairColor + "," + age + ","+isAdult+","+maneColor;
+        super.getMessage();
+        return  ","+isAdult+","+maneColor;
     }
     @Override
      void singASong(String songName) {
         System.out.println(name + "은" + songName + "을 뺴애액!부른다");
     }
+
 
 
     boolean isAdult;
