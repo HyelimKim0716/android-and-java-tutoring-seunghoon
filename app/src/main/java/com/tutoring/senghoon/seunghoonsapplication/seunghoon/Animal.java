@@ -1,3 +1,5 @@
+
+
 package com.tutoring.senghoon.seunghoonsapplication.seunghoon;
 
 public abstract class Animal {
