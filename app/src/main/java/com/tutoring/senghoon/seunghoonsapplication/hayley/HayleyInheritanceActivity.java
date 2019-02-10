@@ -34,17 +34,11 @@ public class HayleyInheritanceActivity extends AppCompatActivity {
         Bird zazu = new Bird("Zazu", 48, "Blue", 48);
 
 
-        tvSimbaValue.setText(simba.getMessage()
-                + simba.isAdult + ", "
-                + simba.maneColor);
+        tvSimbaValue.setText(simba.getMessage());
 
-        tvMufasaValue.setText(mufasa.getMessage()
-                + mufasa.isAdult + ", "
-                + mufasa.maneColor);
+        tvMufasaValue.setText(mufasa.getMessage());
 
-        tvScarValue.setText(scar.getMessage()
-                + scar.isAdult + ", "
-                + scar.maneColor);
+        tvScarValue.setText(scar.getMessage());
 
         tvLapikeyValue.setText(lapikey.getMessage());
 

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".seunghoon.SeunghoonInterface2Activity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +30,6 @@
         <activity android:name=".hayley.HayleyDogClassActivity" />
         <activity android:name=".hayley.HayleyInheritanceActivity" />
         <activity android:name=".hayley.HayleyInterfaceActivity" />
-
         <activity android:name=".seunghoon.SeunghoonMainActivity" />
         <activity android:name=".seunghoon.SeunghoonDataTypeActivity" />
         <activity android:name=".seunghoon.SeunghoonLinearLayoutActivity" />
@@ -43,7 +43,7 @@
         <activity android:name=".seunghoon.SeunghoonCarClassActivity" />
         <activity android:name=".seunghoon.SeunghoonDogClassActivity" />
         <activity android:name=".seunghoon.SeunghoonInheritanceActivity" />
-        <activity android:name=".seunghoon.SeunghoonInterfaceActivity"/>
+        <activity android:name=".seunghoon.SeunghoonInterfaceActivity" />
     </application>
 
 </manifest>
