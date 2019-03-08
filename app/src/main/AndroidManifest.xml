@@ -42,6 +42,7 @@
         <activity android:name=".seunghoon.SeunghoonScheduleActivity" />
         <activity android:name=".seunghoon.SeunghoonCarClassActivity" />
         <activity android:name=".seunghoon.SeunghoonDogClassActivity" />
+        <activity android:name=".seunghoon.SeunghoonDog2ClassActivity" />
         <activity android:name=".seunghoon.SeunghoonInheritanceActivity" />
         <activity android:name=".seunghoon.SeunghoonInterfaceActivity" />
         <activity android:name=".seunghoon.SeunghoonInterface2Activity" />
