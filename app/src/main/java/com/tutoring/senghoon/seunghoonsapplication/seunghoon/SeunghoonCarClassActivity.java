@@ -37,7 +37,8 @@ public class SeunghoonCarClassActivity extends AppCompatActivity {
         btnShCarSpeedDown.setOnClickListener(onBtnShCarSpeedDownClickListener);
 
         // 데이터타입 변수명
-        seunghoonCar = new Car();
+        int a = 0;
+        Car seunghoonCar = new Car();
         seunghoonCar.color = "Red";
         seunghoonCar.speed = 50;
         seunghoonCar.wheel = 2;

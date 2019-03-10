@@ -12,6 +12,14 @@ public abstract class Animal {
     int age;
 
     String getMessage() {
+
+        System.out.println(name + "는 달린다아아앙ㅇ");
+        System.out.println(name + "는 달린다아아앙ㅇ");
+        System.out.println(name + "는 달린다아아앙ㅇ");
+        System.out.println(name + "는 달린다아아앙ㅇ");
+        System.out.println(name + "는 달린다아아앙ㅇ");
+        System.out.println(name + "는 달린다아아앙ㅇ");
+
         return name+","+legCount+","+hairColor+","+age;
     }
 

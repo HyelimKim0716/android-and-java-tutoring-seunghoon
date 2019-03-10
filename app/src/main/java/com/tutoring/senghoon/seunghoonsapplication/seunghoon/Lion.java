@@ -10,12 +10,22 @@ public class Lion extends Animal {
 
     @Override
     String getMessage() {
-        super.getMessage();
-        return  ","+isAdult+","+maneColor;
+        // name,    legCount,   hairColor,  age,    isAdult,    maneColor
+
+        // simba,   4,        , yellow,     4,      false,      None
+        // mufasa,  4           , Brown     46,     true,       redBrown
+        // scar,    4,          darkBrown,  37,     true,       Black
+
+        super.getMessage();     // name+","+legCount+","+hairColor+","+age
+
+        return  name+","+legCount+","+hairColor+","+age+ isAdult + maneColor;
     }
     @Override
      void singASong(String songName) {
         System.out.println(name + "은" + songName + "을 뺴애액!부른다");
+
+
+
     }
 
 
