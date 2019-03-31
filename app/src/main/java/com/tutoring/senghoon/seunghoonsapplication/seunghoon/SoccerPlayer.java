@@ -1,7 +1,14 @@
 package com.tutoring.senghoon.seunghoonsapplication.seunghoon;
 
-public class SoccerPlayer implements Player{
-    String name;
+public class SoccerPlayer extends Athlete implements Player{
+    String position;
+    String skill;
+
+    SoccerPlayer(String name,String position,String team,String skill,int imgSrc) {
+        super(name, team,imgSrc);
+       this.position = position;
+       this.skill = skill;
+    }
 
     @Override
     public void move() {
