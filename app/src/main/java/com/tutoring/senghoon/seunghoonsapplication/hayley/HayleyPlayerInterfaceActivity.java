@@ -33,7 +33,7 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
     SoccerPlayer figo, pogba, euijo ;
     VolleyballPlayer yeongyung = new VolleyballPlayer("김연경", "엣자스바쉬", R.drawable.volleyball_yeongyung, volleyballPlayerListener);
     VolleyballPlayer sani = new VolleyballPlayer("김사니", "화성 IBK 기업은행 알토스", R.drawable.volleyball_sani, volleyballPlayerListener);
-    BasketballPlayer jordan = new BasketballPlayer("Jordan", "시카고불스", R.drawable.basketball_jordan);
+    BasketballPlayer jordan = new BasketballPlayer("Jordan", "시카고불스", R.drawable.basketball_michael_jordan);
     BasketballPlayer janghoon = new BasketballPlayer("서장훈", "부산 KT 소닉붐", R.drawable.basketball_janghoon);
 
 
@@ -88,7 +88,7 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
                 "Midfielder",
                 "맨체스터 유나이티드",
                 "강한 중거리 슛",
-                R.drawable.soccer_daik, soccerPlayerListener);
+                R.drawable.soccer_pogba, soccerPlayerListener);
 
         euijo = new SoccerPlayer("황의조",
                 "ST",

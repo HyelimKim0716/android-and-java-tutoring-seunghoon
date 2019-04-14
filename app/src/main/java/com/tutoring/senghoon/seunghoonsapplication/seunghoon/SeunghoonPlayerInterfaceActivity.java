@@ -10,19 +10,33 @@ import android.widget.TextView;
 import com.tutoring.senghoon.seunghoonsapplication.R;
 
 public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
-    TextView tvSoccerPlayerName, tvSoccerPlayerPosition, tvSoccerPlayerTeam, tvSoccerPlayerSkill,
-            tvVolleyballPlayerName , tvVolleyballPlayerTeam,tvBasketballPlayerName,tvBasketballPlayerTeam;
+    TextView tvSoccerPlayerName, tvSoccerPlayerPosition, tvSoccerPlayerTeam, tvSoccerPlayerSkill, tvSoccerPlayerStatus,
+            tvVolleyballPlayerName , tvVolleyballPlayerTeam,tvBasketballPlayerName,tvBasketballPlayerTeam, tvVolleyballPlayerStatus, tvBasketballPlayerStatus;
     ImageView ivSoccerPlayer, ivVolleyballPlayer,ivBasketballPlayer;
 
+    SoccerPlayer.SoccerPlayerListner soccerPlayerListner =  new SoccerPlayer.SoccerPlayerListner() {
+        @Override
+        public void finish(String name) {
+            tvSoccerPlayerStatus.setText(name + " is hero!!!!!!!");
+        }
+    };
 
+    VolleyballPlayer.VolleyballPlayerListener volleyballPlayerListener = new VolleyballPlayer.VolleyballPlayerListener() {
+        @Override
+        public void end(String name) {
+            tvVolleyballPlayerStatus.setText(name + "done");
+        }
+    };
 
-    SoccerPlayer figo = new SoccerPlayer("soccer_figo", "RM", "바르셀로나", "감아차기",R.drawable.soccer_figo);
-    SoccerPlayer pogba = new SoccerPlayer("soccer_pogba", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_daik);
-    SoccerPlayer euijo = new SoccerPlayer("soccer_euijo", "ST", "감바 오사카", "슬라이드 감차슛",R.drawable.soccer_euijo);
-    VolleyballPlayer yeongyung = new VolleyballPlayer("yeongyung","엣자스바쉬",R.drawable.volleyball_yeongyung);
-    VolleyballPlayer sani = new VolleyballPlayer("sani","화성 IBK 기업은행 알토스",R.drawable.volleyball_sani);
-    BasketballPlayer jordan = new BasketballPlayer("jordan","시카고 불스", R.drawable.basketball_jordan);
+    SoccerPlayer figo = new SoccerPlayer("soccer_figo", "RM", "바르셀로나", "감아차기",R.drawable.soccer_figo,soccerPlayerListner);
+    SoccerPlayer pogba = new SoccerPlayer("soccer_pogba", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_pogba,soccerPlayerListner);
+    SoccerPlayer euijo = new SoccerPlayer("soccer_euijo", "ST", "감바 오사카", "슬라이드 감차슛",R.drawable.soccer_euijo,soccerPlayerListner);
+    VolleyballPlayer yeongyung = new VolleyballPlayer("yeongyung","엣자스바쉬",R.drawable.volleyball_yeongyung, volleyballPlayerListener);
+    VolleyballPlayer sani = new VolleyballPlayer("sani","화성 IBK 기업은행 알토스",R.drawable.volleyball_sani,volleyballPlayerListener);
+    BasketballPlayer jordan = new BasketballPlayer("jordan","시카고 불스", R.drawable.basketball_michael_jordan);
     BasketballPlayer janghoon = new BasketballPlayer("janghoon","부산 KT 소닉붐",R.drawable.basketball_janghoon);
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +47,17 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
         tvSoccerPlayerSkill = findViewById(R.id.sh_soccer_tvSkillValue);
         tvSoccerPlayerTeam = findViewById(R.id.sh_soccer_tvTeamValue);
         ivSoccerPlayer = findViewById(R.id.sh_soccer_ivPlayer);
+        tvSoccerPlayerStatus = findViewById(R.id.sh_soccer_tvPlayerStatus);
 
         tvVolleyballPlayerName = findViewById(R.id.sh_volleyball_tvNameValue);
         tvVolleyballPlayerTeam = findViewById(R.id.sh_volleyball_tvTeamValue);
         ivVolleyballPlayer = findViewById(R.id.sh_volleyball_ivPlayerPicture);
+        tvVolleyballPlayerStatus = findViewById(R.id.sh_volleyball_tvPlayerStatus);
 
         tvBasketballPlayerName = findViewById(R.id.sh_basketball_tvPlayerName);
         tvBasketballPlayerTeam = findViewById(R.id.sh_basketball_tvPlayerTeam);
         ivBasketballPlayer = findViewById(R.id.sh_basketball_ivPlayerPicture);
+        tvBasketballPlayerStatus = findViewById(R.id.sh_basketball_tvPalyerStatus);
 
 
         Button btnFigo = findViewById(R.id.sh_soccer_btnFigo);
@@ -60,6 +77,8 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
         btnJordan.setOnClickListener(btnClickListener);
         btnJanghoon.setOnClickListener(btnClickListener);
 
+
+
     }
 
     View.OnClickListener btnClickListener = new View.OnClickListener() {
@@ -73,6 +92,7 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
                     tvSoccerPlayerTeam.setText(figo.team);
                     tvSoccerPlayerSkill.setText(figo.skill);
                     ivSoccerPlayer.setImageResource(figo.imgSrc);
+                    figo.move();
                     break;
 
                 case R.id.sh_soccer_btnPogba:
@@ -81,6 +101,7 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
                     tvSoccerPlayerSkill.setText(pogba.skill);
                     tvSoccerPlayerTeam.setText(pogba.team);
                     ivSoccerPlayer.setImageResource(pogba.imgSrc);
+                    pogba.move();
                     break;
 
                 case R.id.sh_soccer_btnEuijo:
@@ -89,18 +110,23 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
                     tvSoccerPlayerPosition.setText(euijo.position);
                     tvSoccerPlayerSkill.setText(euijo.skill);
                     ivSoccerPlayer.setImageResource(euijo.imgSrc);
+                    euijo.move();
                     break;
 
                 case R.id.sh_volleyball_btnYeongyung:
                     tvVolleyballPlayerName.setText(yeongyung.name);
                     tvVolleyballPlayerTeam.setText(yeongyung.team);
                     ivVolleyballPlayer.setImageResource(yeongyung.imgSrc);
+                    yeongyung.move();
+                    yeongyung.stop();
                     break;
 
                 case R.id.sh_volleyball_btnSani:
                     tvVolleyballPlayerName.setText(sani.name);
                     tvVolleyballPlayerTeam.setText(sani.team);
                     ivVolleyballPlayer.setImageResource(sani.imgSrc);
+                    sani.stop();
+                    sani.move();
                     break;
 
                 case R.id.sh_basketball_jordan:
