@@ -27,14 +27,20 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
             tvVolleyballPlayerStatus.setText(name + "done");
         }
     };
+    BasketballPlayer.BasketballPlayerListener basketballPlayerListener = new BasketballPlayer.BasketballPlayerListener() {
+        @Override
+        public void status(String name,String status) {
+            tvBasketballPlayerStatus.setText(name + "의 " + status + "is okay");
+        }
+    };
 
     SoccerPlayer figo = new SoccerPlayer("soccer_figo", "RM", "바르셀로나", "감아차기",R.drawable.soccer_figo,soccerPlayerListner);
     SoccerPlayer pogba = new SoccerPlayer("soccer_pogba", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_pogba,soccerPlayerListner);
     SoccerPlayer euijo = new SoccerPlayer("soccer_euijo", "ST", "감바 오사카", "슬라이드 감차슛",R.drawable.soccer_euijo,soccerPlayerListner);
     VolleyballPlayer yeongyung = new VolleyballPlayer("yeongyung","엣자스바쉬",R.drawable.volleyball_yeongyung, volleyballPlayerListener);
     VolleyballPlayer sani = new VolleyballPlayer("sani","화성 IBK 기업은행 알토스",R.drawable.volleyball_sani,volleyballPlayerListener);
-    BasketballPlayer jordan = new BasketballPlayer("jordan","시카고 불스", R.drawable.basketball_michael_jordan);
-    BasketballPlayer janghoon = new BasketballPlayer("janghoon","부산 KT 소닉붐",R.drawable.basketball_janghoon);
+    BasketballPlayer jordan = new BasketballPlayer("jordan","시카고 불스", R.drawable.basketball_jordan,basketballPlayerListener);
+    BasketballPlayer janghoon = new BasketballPlayer("janghoon","부산 KT 소닉붐",R.drawable.basketball_janghoon,basketballPlayerListener);
 
 
 
@@ -133,12 +139,15 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
                     tvBasketballPlayerName.setText(jordan.name);
                     tvBasketballPlayerTeam.setText(jordan.team);
                     ivBasketballPlayer.setImageResource(jordan.imgSrc);
+
+                    jordan.move();
                     break;
 
                 case R.id.sh_basketball_janghoon:
                     tvBasketballPlayerName.setText(janghoon.name);
                     tvBasketballPlayerTeam.setText(janghoon.team);
                     ivBasketballPlayer.setImageResource(janghoon.imgSrc);
+                    janghoon.stop();
 
                     break;
 
