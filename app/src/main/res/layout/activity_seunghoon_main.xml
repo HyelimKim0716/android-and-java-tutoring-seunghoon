@@ -147,4 +147,13 @@
         android:text="Player"
         app:layout_constraintStart_toEndOf="@id/seunghoonMain_btnKakao"
         app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnInterface2" />
+
+    <Button
+        android:id="@+id/seunghoonMain_btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Recycler View"
+        app:layout_constraintStart_toEndOf="@id/seunghoonMain_btnPlayer"
+        app:layout_constraintTop_toBottomOf="@id/seunghoonMain_btnDog2Class" />
 </android.support.constraint.ConstraintLayout>

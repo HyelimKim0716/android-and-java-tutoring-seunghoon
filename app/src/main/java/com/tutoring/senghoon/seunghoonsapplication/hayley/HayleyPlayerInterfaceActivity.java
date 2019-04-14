@@ -88,7 +88,7 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
                 "Midfielder",
                 "맨체스터 유나이티드",
                 "강한 중거리 슛",
-                R.drawable.soccer_pogba, soccerPlayerListener);
+                R.drawable.soccer_daik, soccerPlayerListener);
 
         euijo = new SoccerPlayer("황의조",
                 "ST",

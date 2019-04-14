@@ -31,6 +31,7 @@ public class SeunghoonMainActivity extends AppCompatActivity {
         findViewById(R.id.seunghoonMain_btnDog2Class).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnKakao).setOnClickListener(mBtnClickListener);
         findViewById(R.id.seunghoonMain_btnPlayer).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.seunghoonMain_btnRecyclerView).setOnClickListener(mBtnClickListener);
     }
 
     private View.OnClickListener mBtnClickListener = new View.OnClickListener() {
@@ -105,6 +106,10 @@ public class SeunghoonMainActivity extends AppCompatActivity {
 
                 case R.id.seunghoonMain_btnPlayer:
                     intent = new Intent(SeunghoonMainActivity.this, SeunghoonPlayerInterfaceActivity.class);
+                    break;
+
+                case R.id.seunghoonMain_btnRecyclerView:
+                    intent = new Intent(SeunghoonMainActivity.this, SeunghoonRecyclerViewActivity.class);
                     break;
             }
 

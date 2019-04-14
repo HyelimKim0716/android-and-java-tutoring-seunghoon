@@ -22,11 +22,6 @@ public class SoccerPlayer extends Athlete implements Player {
     @Override
     public void move() {
         System.out.println(name + "는 파워드리블하면서 달린다");
-        System.out.println(name + "는 파워드리블하면서 달린다");
-        System.out.println(name + "는 파워드리블하면서 달린다");
-        System.out.println(name + "는 파워드리블하면서 달린다");
-        System.out.println(name + "는 파워드리블하면서 달린다");
-        System.out.println(name + "는 파워드리블하면서 달린다");
 
         soccerPlayerListener.finish(name);
 

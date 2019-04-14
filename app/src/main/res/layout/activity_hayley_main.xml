@@ -141,4 +141,13 @@
         android:text="Player"
         app:layout_constraintStart_toEndOf="@id/hayleyMain_btnKakao"
         app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnInterface2" />
+
+    <Button
+        android:id="@+id/hayleyMain_btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="RecyclerView"
+        app:layout_constraintStart_toEndOf="@id/hayleyMain_btnPlayer"
+        app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnInterface2" />
 </android.support.constraint.ConstraintLayout>
