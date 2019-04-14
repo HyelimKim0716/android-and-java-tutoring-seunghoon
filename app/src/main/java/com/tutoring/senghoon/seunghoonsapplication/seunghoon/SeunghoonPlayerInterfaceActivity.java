@@ -17,11 +17,11 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
 
 
     SoccerPlayer figo = new SoccerPlayer("soccer_figo", "RM", "바르셀로나", "감아차기",R.drawable.soccer_figo);
-    SoccerPlayer pogba = new SoccerPlayer("soccer_pogba", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_pogba);
+    SoccerPlayer pogba = new SoccerPlayer("soccer_pogba", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_daik);
     SoccerPlayer euijo = new SoccerPlayer("soccer_euijo", "ST", "감바 오사카", "슬라이드 감차슛",R.drawable.soccer_euijo);
     VolleyballPlayer yeongyung = new VolleyballPlayer("yeongyung","엣자스바쉬",R.drawable.volleyball_yeongyung);
     VolleyballPlayer sani = new VolleyballPlayer("sani","화성 IBK 기업은행 알토스",R.drawable.volleyball_sani);
-    BasketballPlayer jordan = new BasketballPlayer("jordan","시카고 불스", R.drawable.basketball_michael_jordan);
+    BasketballPlayer jordan = new BasketballPlayer("jordan","시카고 불스", R.drawable.basketball_jordan);
     BasketballPlayer janghoon = new BasketballPlayer("janghoon","부산 KT 소닉붐",R.drawable.basketball_janghoon);
 
     @Override

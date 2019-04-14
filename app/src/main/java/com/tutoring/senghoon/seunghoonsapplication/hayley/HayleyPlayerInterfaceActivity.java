@@ -10,16 +10,33 @@ import android.widget.TextView;
 import com.tutoring.senghoon.seunghoonsapplication.R;
 
 public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
-    TextView tvSoccerPlayerName, tvSoccerPlayerPosition, tvSoccerPlayerTeam, tvSoccerPlayerSkill,
-    tvVolleyballPlayerName, tvVolleyballPlayerTeam,
-    tvBasketballPlayerName, tvBasketballPlayerTeam;
+    TextView tvSoccerPlayerName, tvSoccerPlayerPosition, tvSoccerPlayerTeam, tvSoccerPlayerSkill, tvSoccerPlayerStatus,
+    tvVolleyballPlayerName, tvVolleyballPlayerTeam, tvVolleyballPlayerStatus,
+    tvBasketballPlayerName, tvBasketballPlayerTeam, tvBasketballPlayerStatus;
     ImageView ivSoccerPlayer, ivVolleyballPlayer, ivBasketballPlayer;
 
+    SoccerPlayer.SoccerPlayerListener soccerPlayerListener = new SoccerPlayer.SoccerPlayerListener() {
+        @Override
+        public void finish(String name) {
+            tvSoccerPlayerStatus.setText(name + " is finished");
+        }
+    };
+
+    VolleyballPlayer.VolleyballPlayerListener volleyballPlayerListener = new VolleyballPlayer.VolleyballPlayerListener() {
+        @Override
+        public void end(String name) {
+            tvVolleyballPlayerStatus.setText(name + " is volleyball player");
+        }
+    };
+
+
     SoccerPlayer figo, pogba, euijo ;
-    VolleyballPlayer yeongyung = new VolleyballPlayer("김연경", "엣자스바쉬", R.drawable.volleyball_yeongyung);
-    VolleyballPlayer sani = new VolleyballPlayer("김사니", "화성 IBK 기업은행 알토스", R.drawable.volleyball_sani);
+    VolleyballPlayer yeongyung = new VolleyballPlayer("김연경", "엣자스바쉬", R.drawable.volleyball_yeongyung, volleyballPlayerListener);
+    VolleyballPlayer sani = new VolleyballPlayer("김사니", "화성 IBK 기업은행 알토스", R.drawable.volleyball_sani, volleyballPlayerListener);
     BasketballPlayer jordan = new BasketballPlayer("Jordan", "시카고불스", R.drawable.basketball_jordan);
     BasketballPlayer janghoon = new BasketballPlayer("서장훈", "부산 KT 소닉붐", R.drawable.basketball_janghoon);
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +47,15 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
         tvSoccerPlayerPosition = findViewById(R.id.hl_soccer_tvPlayerPosition);
         tvSoccerPlayerTeam = findViewById(R.id.hl_soccer_tvPlayerTeam);
         tvSoccerPlayerSkill = findViewById(R.id.hl_soccer_tvPlayerSkill);
+        tvSoccerPlayerStatus = findViewById(R.id.hl_soccer_tvPlayerStatus);
+
         tvVolleyballPlayerName = findViewById(R.id.hl_volleyball_tvPlayerName);
         tvVolleyballPlayerTeam = findViewById(R.id.hl_volleyball_tvPlayerTeam);
+        tvVolleyballPlayerStatus = findViewById(R.id.hl_volleyball_tvPlayerStatus);
+
         tvBasketballPlayerName = findViewById(R.id.hl_basketball_tvPlayerName);
         tvBasketballPlayerTeam = findViewById(R.id.hl_basketball_tvPlayerTeam);
+        tvBasketballPlayerStatus = findViewById(R.id.hl_basketball_tvPlayerStatus);
 
         ivSoccerPlayer = findViewById(R.id.hl_soccer_ivPlayerPicture);
         ivVolleyballPlayer = findViewById(R.id.hl_volleyball_ivPlayerPicture);
@@ -60,20 +82,19 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
                 "Right Midfielder",
                 "바르셀로나",
                 "감아차기",
-                R.drawable.soccer_figo);
+                R.drawable.soccer_figo, soccerPlayerListener);
 
         pogba = new SoccerPlayer("Paul Pogba",
                 "Midfielder",
                 "맨체스터 유나이티드",
                 "강한 중거리 슛",
-                R.drawable.soccer_daik);
+                R.drawable.soccer_daik, soccerPlayerListener);
 
         euijo = new SoccerPlayer("황의조",
                 "ST",
                 "감바 오사카",
                 "슬라이드 감차슛",
-                R.drawable.soccer_euijo);
-
+                R.drawable.soccer_euijo, soccerPlayerListener);
 
     }
 
@@ -87,6 +108,9 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
                     tvSoccerPlayerTeam.setText(figo.team);
                     tvSoccerPlayerSkill.setText(figo.skill);
                     ivSoccerPlayer.setImageResource(figo.imgSrc);
+                    figo.move();
+                    figo.stop();
+
                     break;
 
                 case R.id.hl_soccer_btnPogba:
@@ -95,6 +119,8 @@ public class HayleyPlayerInterfaceActivity extends AppCompatActivity {
                     tvSoccerPlayerTeam.setText(pogba.team);
                     tvSoccerPlayerSkill.setText(pogba.skill);
                     ivSoccerPlayer.setImageResource(pogba.imgSrc);
+
+                    pogba.move();
                     break;
 
                 case R.id.hl_soccer_btnEuijo:

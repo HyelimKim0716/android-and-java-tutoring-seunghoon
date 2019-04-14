@@ -121,6 +121,13 @@
                     android:layout_height="wrap_content"
                     android:text="SkillValue"/>
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/hl_soccer_tvPlayerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="finish()" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -200,6 +207,12 @@
                     android:layout_height="wrap_content"
                     android:text="TeamValue"/>
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/hl_volleyball_tvPlayerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="end()"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -278,6 +291,12 @@
                     android:layout_height="wrap_content"
                     android:text="TeamValue"/>
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/hl_basketball_tvPlayerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status"/>
         </LinearLayout>
     </LinearLayout>
 

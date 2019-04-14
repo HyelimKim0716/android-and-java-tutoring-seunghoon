@@ -209,7 +209,7 @@
             android:id="@+id/sh_basketball_ivPlayerPicture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/basketball_michael_jordan"/>
+            android:src="@drawable/basketball_jordan"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
