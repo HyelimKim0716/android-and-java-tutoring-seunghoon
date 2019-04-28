@@ -150,4 +150,13 @@
         android:text="RecyclerView"
         app:layout_constraintStart_toEndOf="@id/hayleyMain_btnPlayer"
         app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnInterface2" />
+
+    <Button
+        android:id="@+id/hayleyMain_btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button.CustomNormal"
+        android:text="Gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hayleyMain_btnKakao" />
 </android.support.constraint.ConstraintLayout>

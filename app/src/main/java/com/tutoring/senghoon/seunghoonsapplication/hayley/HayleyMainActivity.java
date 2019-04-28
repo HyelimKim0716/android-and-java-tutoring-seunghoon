@@ -30,6 +30,7 @@ public class HayleyMainActivity extends AppCompatActivity {
         findViewById(R.id.hayleyMain_btnKakao).setOnClickListener(mBtnClickListener);
         findViewById(R.id.hayleyMain_btnPlayer).setOnClickListener(mBtnClickListener);
         findViewById(R.id.hayleyMain_btnRecyclerView).setOnClickListener(mBtnClickListener);
+        findViewById(R.id.hayleyMain_btnGallery).setOnClickListener(mBtnClickListener);
     }
 
     private View.OnClickListener mBtnClickListener = new View.OnClickListener() {
@@ -100,6 +101,10 @@ public class HayleyMainActivity extends AppCompatActivity {
 
                 case R.id.hayleyMain_btnRecyclerView:
                     intent = new Intent(HayleyMainActivity.this, HayleyRecyclerViewActivity.class);
+                    break;
+
+                case R.id.hayleyMain_btnGallery:
+                    intent = new Intent(HayleyMainActivity.this, HayleyGalleryActivity.class);
                     break;
 
             }

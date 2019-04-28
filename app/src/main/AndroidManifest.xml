@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tutoring.senghoon.seunghoonsapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -34,6 +36,7 @@
         <activity android:name=".hayley.HayleyKakaoCharacterActivity" />
         <activity android:name=".hayley.HayleyPlayerInterfaceActivity" />
         <activity android:name=".hayley.HayleyRecyclerViewActivity" />
+        <activity android:name=".hayley.HayleyGalleryActivity" />
         <activity android:name=".seunghoon.SeunghoonMainActivity" />
         <activity android:name=".seunghoon.SeunghoonDataTypeActivity" />
         <activity android:name=".seunghoon.SeunghoonLinearLayoutActivity" />
@@ -52,7 +55,8 @@
         <activity android:name=".seunghoon.SeunghoonInterface2Activity" />
         <activity android:name=".seunghoon.SeunghoonKakaoCharacterActivity" />
         <activity android:name=".seunghoon.SeunghoonPlayerInterfaceActivity" />
-        <activity android:name=".seunghoon.SeunghoonRecyclerViewActivity"/>
+        <activity android:name=".seunghoon.SeunghoonRecyclerViewActivity" />
+        <activity android:name=".seunghoon.SeunghoonGalleryActivity"/>
 
     </application>
 
