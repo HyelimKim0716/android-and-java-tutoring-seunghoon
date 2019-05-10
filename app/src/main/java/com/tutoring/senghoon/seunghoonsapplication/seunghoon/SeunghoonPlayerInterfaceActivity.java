@@ -35,7 +35,7 @@ public class SeunghoonPlayerInterfaceActivity extends AppCompatActivity {
     };
 
     SoccerPlayer figo = new SoccerPlayer("soccer_figo", "RM", "바르셀로나", "감아차기",R.drawable.soccer_figo,soccerPlayerListner);
-    SoccerPlayer pogba = new SoccerPlayer("soccer_daik", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_daik,soccerPlayerListner);
+    SoccerPlayer pogba = new SoccerPlayer("soccer_daik", "CAM", "멘체스터 유나이티드", "중거리슛",R.drawable.soccer_pogba,soccerPlayerListner);
     SoccerPlayer euijo = new SoccerPlayer("soccer_euijo", "ST", "감바 오사카", "슬라이드 감차슛",R.drawable.soccer_euijo,soccerPlayerListner);
     VolleyballPlayer yeongyung = new VolleyballPlayer("yeongyung","엣자스바쉬",R.drawable.volleyball_yeongyung, volleyballPlayerListener);
     VolleyballPlayer sani = new VolleyballPlayer("sani","화성 IBK 기업은행 알토스",R.drawable.volleyball_sani,volleyballPlayerListener);
