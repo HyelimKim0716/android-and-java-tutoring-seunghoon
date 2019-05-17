@@ -17,7 +17,7 @@ import com.tutoring.senghoon.seunghoonsapplication.R;
 
 public class SeunghoonGalleryActivity extends AppCompatActivity {
 
-    private final int GALLERY_REQUEST_CODE = 1;
+    private final int PERMISSION_REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,25 @@ public class SeunghoonGalleryActivity extends AppCompatActivity {
 
         SeunghoonGalleryAdapter adapter = new SeunghoonGalleryAdapter();
         recyclerView.setAdapter(adapter);
+        SeunghoonGalleryItem item1 = new SeunghoonGalleryItem();
+        item1.imageResourceId = R.drawable.dog1;
+        item1.fileName = "dog1";
+        adapter.galleryItemList.add(item1);
+
+        SeunghoonGalleryItem item2 = new SeunghoonGalleryItem();
+        item2.imageResourceId = R.drawable.dog2;
+        item2.fileName = "dog2";
+        adapter.galleryItemList.add(item2);
+
+        SeunghoonGalleryItem item3 = new SeunghoonGalleryItem();
+        item3.imageResourceId = R.drawable.dog3;
+        item3.fileName = "dog3";
+        adapter.galleryItemList.add(item3);
+
+        SeunghoonGalleryItem item4 = new SeunghoonGalleryItem();
+        item4.imageResourceId = R.drawable.kakao_ryan;
+        item4.fileName = "ryan";
+        adapter.galleryItemList.add(item4);
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -46,7 +65,7 @@ public class SeunghoonGalleryActivity extends AppCompatActivity {
                 Manifest.permission.READ_EXTERNAL_STORAGE
         };
 
-        ActivityCompat.requestPermissions(this, permissions, GALLERY_REQUEST_CODE);
+        ActivityCompat.requestPermissions(this, permissions, PERMISSION_REQUEST_CODE);
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -62,7 +81,7 @@ public class SeunghoonGalleryActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
-            case GALLERY_REQUEST_CODE:
+            case PERMISSION_REQUEST_CODE:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     initializeView();
                 } else {

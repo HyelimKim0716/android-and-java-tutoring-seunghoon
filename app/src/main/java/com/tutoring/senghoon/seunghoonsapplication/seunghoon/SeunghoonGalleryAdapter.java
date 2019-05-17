@@ -5,10 +5,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.tutoring.senghoon.seunghoonsapplication.R;
 
+import java.util.ArrayList;
+
 public class SeunghoonGalleryAdapter extends RecyclerView.Adapter<SeunghoonGalleryAdapter.GalleryViewHolder> {
+
+    ArrayList<SeunghoonGalleryItem> galleryItemList = new ArrayList<>();
 
     @NonNull
     @Override
@@ -19,19 +25,30 @@ public class SeunghoonGalleryAdapter extends RecyclerView.Adapter<SeunghoonGalle
 
     @Override
     public void onBindViewHolder(@NonNull GalleryViewHolder holder, int position) {
-
+        SeunghoonGalleryItem item = galleryItemList.get(position);
+        holder.bind(item);
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return galleryItemList.size();
     }
 
-    class GalleryViewHolder extends RecyclerView.ViewHolder {
 
+    class GalleryViewHolder extends RecyclerView.ViewHolder {
+        ImageView imageView;
+        TextView tvFileName;
         GalleryViewHolder(View itemView) {
             super(itemView);
+            imageView = itemView.findViewById(R.id.sh_galleryItemView_imgFile);
+           tvFileName = itemView.findViewById(R.id.sh_galleryItemView_tvFileName);
         }
+        void bind(SeunghoonGalleryItem item) {
+            imageView.setImageResource(item.imageResourceId);
+            tvFileName.setText(item.fileName);
+        }
+
+
     }
 
 }

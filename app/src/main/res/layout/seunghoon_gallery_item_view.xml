@@ -12,6 +12,7 @@
         android:src ="@drawable/dog2"/>
 
     <TextView
+        android:id="@+id/sh_galleryItemView_tvFileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sh_galleryItemView_imgFile"
