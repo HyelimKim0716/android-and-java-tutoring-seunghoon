@@ -5,10 +5,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.tutoring.senghoon.seunghoonsapplication.R;
 
+import java.util.ArrayList;
+
 public class HayleyGalleryAdapter extends RecyclerView.Adapter<HayleyGalleryAdapter.GalleryViewHolder> {
+
+    ArrayList<HayleyGalleryItem> galleryItemList = new ArrayList<>();
 
     @NonNull
     @Override
@@ -18,20 +24,34 @@ public class HayleyGalleryAdapter extends RecyclerView.Adapter<HayleyGalleryAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull GalleryViewHolder galleryViewHolder, int i) {
+    public void onBindViewHolder(@NonNull GalleryViewHolder galleryViewHolder, int position) {
+        HayleyGalleryItem item = galleryItemList.get(position);
+        galleryViewHolder.bind(item);
 
     }
 
     @Override
     public int getItemCount() {
-        return 100;
+        return galleryItemList.size();
     }
 
     class GalleryViewHolder extends RecyclerView.ViewHolder {
 
+        ImageView imageView;
+        TextView tvFileName;
+
         GalleryViewHolder(View itemView) {
             super(itemView);
+            imageView = itemView.findViewById(R.id.hl_galleryItemView_imgFile);
+            tvFileName = itemView.findViewById(R.id.hl_galleryItemView_tvFileName);
+
         }
+
+        void bind(HayleyGalleryItem item) {
+            imageView.setImageResource(item.imageResourceId);
+            tvFileName.setText(item.fileName);
+        }
+
 
     }
 }
