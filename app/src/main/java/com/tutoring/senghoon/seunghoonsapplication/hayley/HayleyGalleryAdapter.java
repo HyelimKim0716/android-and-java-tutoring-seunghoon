@@ -14,7 +14,9 @@ import java.util.ArrayList;
 
 public class HayleyGalleryAdapter extends RecyclerView.Adapter<HayleyGalleryAdapter.GalleryViewHolder> {
 
-    ArrayList<HayleyGalleryItem> galleryItemList = new ArrayList<>();
+    ArrayList<HayleyGalleryItem> galleryItemList = new ArrayList<HayleyGalleryItem>();
+
+
 
     @NonNull
     @Override
@@ -25,9 +27,8 @@ public class HayleyGalleryAdapter extends RecyclerView.Adapter<HayleyGalleryAdap
 
     @Override
     public void onBindViewHolder(@NonNull GalleryViewHolder galleryViewHolder, int position) {
-        HayleyGalleryItem item = galleryItemList.get(position);
-        galleryViewHolder.bind(item);
-
+       HayleyGalleryItem item = galleryItemList.get(position);
+       galleryViewHolder.bind(item);
     }
 
     @Override
@@ -48,7 +49,7 @@ public class HayleyGalleryAdapter extends RecyclerView.Adapter<HayleyGalleryAdap
         }
 
         void bind(HayleyGalleryItem item) {
-            imageView.setImageResource(item.imageResourceId);
+            imageView.setImageBitmap(item.imgBitmap);
             tvFileName.setText(item.fileName);
         }
 

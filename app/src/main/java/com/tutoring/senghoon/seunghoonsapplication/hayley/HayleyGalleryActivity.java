@@ -48,19 +48,33 @@ public class HayleyGalleryActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
 
         recyclerView.setAdapter(adapter);
-        HayleyGalleryItem item1 = new HayleyGalleryItem();
-        item1.imageResourceId = R.drawable.dog1;
-        item1.fileName = "Dog1";
-        adapter.galleryItemList.add(item1);
-
-        HayleyGalleryItem item2 = new HayleyGalleryItem();
-        item2.imageResourceId = R.drawable.dog2;
-        item2.fileName = "Dog2";
-        adapter.galleryItemList.add(item2);
 
 //        getImagesFromGallery();
 
-        getStoredImages();
+//        getStoredImages();
+
+
+
+
+        HayleyGalleryItem item1 = new HayleyGalleryItem();
+        item1.imageResourceId = R.drawable.basketball_janghoon;
+        item1.fileName = "서장훈";
+        adapter.galleryItemList.add(item1);
+
+        HayleyGalleryItem item2 = new HayleyGalleryItem();
+        item2.imageResourceId = R.drawable.soccer_pogba;
+        item2.fileName = "Pogba";
+        adapter.galleryItemList.add(item2);
+
+        HayleyGalleryItem item3 = new HayleyGalleryItem();
+        item1.imageResourceId = R.drawable.dog1;
+        item1.fileName = "Dog1";
+        adapter.galleryItemList.add(item3);
+
+        HayleyGalleryItem item4 = new HayleyGalleryItem();
+        item2.imageResourceId = R.drawable.dog2;
+        item2.fileName = "Dog2";
+        adapter.galleryItemList.add(item4);
     }
 
     private void getStoredImages() {
@@ -74,7 +88,7 @@ public class HayleyGalleryActivity extends AppCompatActivity {
                 Bitmap originalBitmap = BitmapFactory.decodeFile(file.getAbsolutePath(), options);
 
                 HayleyGalleryItem item = new HayleyGalleryItem();
-                item.imgBitmap = Bitmap.createBitmap(originalBitmap, 0, 0, 100, 100);
+                item.imgBitmap = Bitmap.createScaledBitmap(originalBitmap, 100, 100, true);
                 item.fileName = file.getName();
                 adapter.galleryItemList.add(item);
             }
