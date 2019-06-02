@@ -2,6 +2,7 @@ package com.tutoring.senghoon.seunghoonsapplication.seunghoon;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -10,7 +11,9 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Adapter;
 import android.widget.Toast;
 
 import com.tutoring.senghoon.seunghoonsapplication.R;
@@ -32,30 +35,42 @@ public class SeunghoonGalleryActivity extends AppCompatActivity {
 
 
     private void initializeView() {
+        // recycle리사이클러뷰아이디를 코드로 가져온다.
         RecyclerView recyclerView = findViewById(R.id.sh_gallery_recyclerView);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+        // 레이아웃매니저를 만들고 recyclerView에 레이아웃매니저을 셋한다.
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+        // 리사이클러뷰어뎁터를 만들고 셋한다.
+        SeunghoonGalleryAdapter seunghoonGalleryAdapter = new SeunghoonGalleryAdapter();
+        GalleryItem item1 = new GalleryItem();
+        item1.imgResource = R.drawable.dog1;
+        item1.tvResourceName = "개";
+        seunghoonGalleryAdapter.galleryItemList.add(item1);
 
-        SeunghoonGalleryAdapter adapter = new SeunghoonGalleryAdapter();
-        recyclerView.setAdapter(adapter);
-        SeunghoonGalleryItem item1 = new SeunghoonGalleryItem();
-        item1.imageResourceId = R.drawable.dog1;
-        item1.fileName = "dog1";
-        adapter.galleryItemList.add(item1);
+        GalleryItem item2 = new GalleryItem();
+        item2.imgResource = R.drawable.dog2;
+        item2.tvResourceName = "개2";
+        seunghoonGalleryAdapter.galleryItemList.add(item2);
 
-        SeunghoonGalleryItem item2 = new SeunghoonGalleryItem();
-        item2.imageResourceId = R.drawable.dog2;
-        item2.fileName = "dog2";
-        adapter.galleryItemList.add(item2);
+        GalleryItem item3 = new GalleryItem();
+        item3.imgResource = R.drawable.dog3;
+        item3.tvResourceName = "개3";
+        seunghoonGalleryAdapter.galleryItemList.add(item3);
 
-        SeunghoonGalleryItem item3 = new SeunghoonGalleryItem();
-        item3.imageResourceId = R.drawable.dog3;
-        item3.fileName = "dog3";
-        adapter.galleryItemList.add(item3);
+        GalleryItem item4 = new GalleryItem();
+        item4.imgResource = R.drawable.basketball_janghoon;
+        item4.tvResourceName = "서장훈";
+        seunghoonGalleryAdapter.galleryItemList.add(item4);
 
-        SeunghoonGalleryItem item4 = new SeunghoonGalleryItem();
-        item4.imageResourceId = R.drawable.kakao_ryan;
-        item4.fileName = "ryan";
-        adapter.galleryItemList.add(item4);
+        GalleryItem item5 = new GalleryItem();
+        item5.imgResource = R.drawable.basketball_jordan;
+        item5.tvResourceName = "조던";
+        seunghoonGalleryAdapter.galleryItemList.add(item5);
+        //어뎁터에 있는 컨텍스트에 이 엑티비티에 있는 컨텍스트를 셋한다.
+        seunghoonGalleryAdapter.context = getApplicationContext();
+        recyclerView.setAdapter(seunghoonGalleryAdapter);
+
+
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
